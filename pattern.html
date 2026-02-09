@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Example</title>
+</head>
+<body>
+  <pre id="demo"></pre>
+
+  <script>
+    var output = "";
+    var rows = 5;
+
+    for (var i = 1; i <= rows; i++) {
+      for (var j = 1; j <= i; j++) {
+        output += j;
+      }
+      for (var j = i - 1; j >= 1; j--) {
+        output += j;
+      }
+      output += "\n";
+    }
+
+    document.getElementById("demo").innerText = output;
+  </script>
+</body>
+</html>
